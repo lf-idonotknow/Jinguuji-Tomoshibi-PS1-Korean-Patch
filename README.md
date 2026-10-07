@@ -1,77 +1,46 @@
-# 탐정 진구지 사부로 — 등불이 꺼지기 전에
+# 탐정 진구지 사부로: 등불이 꺼지기 전에
 
-PlayStation **일본 보급판(Fukyuuban)** 한글 패치. 첫 공개 버전은 **0.8**입니다.
+**「탐정 진구지 사부로: 등불이 꺼지기 전에」 PlayStation 일본 보급판의 한글 패치입니다. 0.8은 첫 공개 버전입니다.**
 
-## 다운로드 및 적용
+## 다운로드와 패치 적용
 
-이 저장소의 **Releases → v0.8 → Assets**에서 `Tomoshibi_Fukyuuban_KO_v0.8.zip`을 받으세요.
-ZIP에는 패치, CUE, 해시를 검사하는 적용 스크립트, 설명서, Galmuri 라이선스가 들어 있습니다.
-GitHub의 자동 생성 `Source code (zip)`은 패치 배포 ZIP이 아닙니다.
+**[한글 패치 0.8 다운로드](https://github.com/lf-idonotknow/Jinguuji-Tomoshibi-PS1-Korean-Patch/releases/download/v0.8/Tomoshibi_Fukyuuban_KO_v0.8.zip)** · **[처음 적용하는 분을 위한 안내](docs/APPLY.md)**
 
-1. **`Tomoshibi_Fukyuuban_KO_v0.8.zip`**을 다운로드하고 **압축을 모두 풉니다**.
-2. Python과 xdelta3를 준비합니다. 설치 순서는 아래 상세 안내에 있습니다.
-3. 압축을 푼 폴더에 원본 BIN을 **이름 그대로 복사**하고 xdelta3 실행 파일을 넣습니다.
-4. 해당 폴더에서 아래 운영체제에 맞는 명령을 복사해 실행합니다.
+Delta Patcher에서 **원본 BIN 선택 → 패치 선택 → 원본 보존 옵션 체크 → Apply patch** 순서로 적용합니다.
+완료 후 생성된 한글판 BIN과 함께 제공되는 CUE를 같은 폴더에 두고, 에뮬레이터에서 CUE를 엽니다.
+프로그램 다운로드부터 결과 파일 준비까지 [적용 안내](docs/APPLY.md)에 설명되어 있습니다.
 
-**Windows**
+## 0.8 첫 공개판의 한글화 내용
 
-```powershell
-py -3 .\apply_patch.py "Tantei Jinguuji Saburou - Tomoshibi ga Kienu Ma ni (Japan) (Fukyuuban).bin" --xdelta .\xdelta3.exe --output-dir Korean
-```
+- 본편 대사와 선택지 한글화.
+- 게임 메뉴, 수첩의 메모·인물 정보·관계도 한글화.
+- 진행에 필요한 문서, 지도, 안내 그림의 일본어 한글화.
+- 주요 영상의 한글 자막과 일부 영상 화면 글자 한글화.
+- 한글 글꼴 적용과 대사창·메뉴에 맞춘 글자 및 문장 배치.
 
-**macOS**
+## 적용 대상과 원본 확인
 
-```sh
-python3 ./apply_patch.py "Tantei Jinguuji Saburou - Tomoshibi ga Kienu Ma ni (Japan) (Fukyuuban).bin" --xdelta ./xdelta3 --output-dir Korean
-```
-
-`패치 적용 및 전체 SHA256 확인 완료.`가 나오면 성공입니다.
-생성된 **`Korean` 폴더의 CUE 파일**을 에뮬레이터에서 엽니다.
-
-[자세한 적용 방법](docs/APPLY.md) · [0.8 변경 내역](CHANGELOG.md) · [검증 범위](docs/VERIFICATION.md)
-
-## 적용 대상
-
-| 항목 | 값 |
+| 항목 | 적용할 원본 BIN |
 |---|---|
-| 판본 | 일본 보급판 / SLPS-03015 |
-| 형식 | 단일 트랙 BIN/CUE, MODE2/2352 |
-| 원본 BIN | `Tantei Jinguuji Saburou - Tomoshibi ga Kienu Ma ni (Japan) (Fukyuuban).bin` |
-| 원본 크기 | 738,819,648바이트 |
-| 원본 SHA256 | `cc44e8c81ae0f379c2adfc07fdd5dec280e8efb85217115567c8c7f9838ae519` |
+| 판본 | PlayStation 일본 보급판 / Fukyuuban / SLPS-03015 |
+| 파일명 | `Tantei Jinguuji Saburou - Tomoshibi ga Kienu Ma ni (Japan) (Fukyuuban).bin` |
+| 크기 | **738,819,648바이트** |
+| SHA256 | `cc44e8c81ae0f379c2adfc07fdd5dec280e8efb85217115567c8c7f9838ae519` |
 
-원본 이름이 달라도 크기와 전체 해시가 같으면 적용할 수 있습니다.
-일반판, 다른 덤프, 기존 한글 ROM은 적용 대상이 아닙니다.
+파일명만 같아서는 같은 원본이라고 판단할 수 없습니다. 해시는 파일의 내용을 식별하는 값입니다.
+일반판이나 이미 한글 패치를 적용한 파일에는 사용할 수 없습니다.
 
-## 0.8 포함 범위
+## 이용 시 참고 사항
 
-- 대사·선택지·메뉴·수첩·인물 정보·관계도의 누적 한글화와 교정.
-- 대사의 줄 배치, 선택지 잘림, 화자명 표시 및 이름표 공백·가운데 정렬 교정.
-- Galmuri11-Condensed 사용처의 인접 한글 사이 1px 자간 적용. 다른 글꼴의 자간은 유지.
-- 진행에 필요한 일본어 그림 글자의 한글화 및 색상 교정. 영어와 장식용 배경 글자는 유지.
-- 대상 영상의 한글 자막. 검은 배경은 한글 글자 뒤에만 배치하며, 원래 일본어 일부가 그 밖에 보일 수 있음.
-- JIN7의 화면 글자를 한글로 직접 교체. TITLEMVE와 ENDMOV는 원본 영상 유지.
-- 저장 불러오기 시 스크립트 적재 조건 복구, 의뢰 설명의 마지막 행 표시 교정.
-- 진구지와 점원·무쓰미·미야케·여관 여주인·올리버 등의 말투 교정, 관계도 중앙 인물명 교정.
-- 조직명 `관동메이지파`, 관계 호칭 `두목 / 형님 / 아우` 적용 및 개별 오역 교정.
+영어 표기와 장식용 배경의 일본어는 원문을 유지합니다. 타이틀·엔딩 영상 일부도 원본입니다.
+영상 자막 주변에 원래 일본어가 일부 보일 수 있습니다.
 
-## 확인 범위
-
-패치와 ZIP을 실제 원본에 적용해 생성한 BIN의 전체 SHA256이 기준 한글 ROM과 같음을 확인했습니다.
-검사 환경은 **macOS / Python 3.9 / xdelta3 3.1.0**입니다.
-
-게임의 원래 문자 출력·GPU 제출 경로와 CD 적재 계약을 검사했습니다. 모든 분기를 실플레이한 검증은 아닙니다.
-모든 에뮬레이터와 원본·이전 한글판 세이브의 호환성은 아직 확인되지 않았습니다.
-문제 제보에는 패치 버전, 실행 환경, 장면과 재현 순서, 스크린샷을 함께 적어 주세요.
+첫 공개판으로, 모든 진행 분기와 모든 에뮬레이터에서의 동작은 확인하지 못했습니다.
+원본 일본판이나 이전 작업판의 세이브 데이터 호환성도 전체 확인되지 않았습니다.
 
 ## 오류 제보
 
-**Issues → New issue → 오류 제보**를 사용해 주세요.
-게임 원본·완성 ROM·BIOS를 첨부하지 마세요.
+문제가 생기면 **[오류 제보](https://github.com/lf-idonotknow/Jinguuji-Tomoshibi-PS1-Korean-Patch/issues/new/choose)**에 패치 버전, 에뮬레이터·기기,
+발생 장면, 재현 순서와 스크린샷을 적어 주세요. 게임 원본·완성 ROM·BIOS는 첨부하지 마세요.
 
-## 출처
-
-게임 및 원본 자산의 권리는 원 권리자에게 있습니다.
-사용한 [Galmuri](https://github.com/quiple/galmuri)의 저작권 표시와 OFL은
-[LICENSES/Galmuri_LICENSE.txt](LICENSES/Galmuri_LICENSE.txt)에 있습니다.
-[출처 및 권리 안내](docs/ATTRIBUTION.md)
+[공개 내역](CHANGELOG.md) · [검증 정보](docs/VERIFICATION.md) · [출처 및 글꼴 라이선스](docs/ATTRIBUTION.md)
