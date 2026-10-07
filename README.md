@@ -1,12 +1,12 @@
 # 탐정 진구지 사부로: 등불이 꺼지기 전에
 
-**「탐정 진구지 사부로: 등불이 꺼지기 전에」 PlayStation 일본 보급판의 한글 패치입니다. 0.8은 첫 공개 버전입니다.**
+「탐정 진구지 사부로: 등불이 꺼지기 전에」 PlayStation 일본 보급판의 한글 패치입니다. 0.8은 첫 공개 버전입니다.
 
 ## 다운로드와 패치 적용
 
-**[한글 패치 0.8 다운로드](https://github.com/lf-idonotknow/Jinguuji-Tomoshibi-PS1-Korean-Patch/releases/download/v0.8/Tomoshibi_Fukyuuban_KO_v0.8.zip)** · **[처음 적용하는 분을 위한 안내](docs/APPLY.md)**
+[한글 패치 0.8 다운로드](https://github.com/lf-idonotknow/Jinguuji-Tomoshibi-PS1-Korean-Patch/releases/download/v0.8/Tomoshibi_Fukyuuban_KO_v0.8.zip) · [처음 적용하는 분을 위한 안내](docs/APPLY.md)
 
-Delta Patcher에서 **원본 BIN 선택 → 패치 선택 → 원본 보존 옵션 체크 → Apply patch** 순서로 적용합니다.
+Delta Patcher에서 원본 BIN 선택 → 패치 선택 → 원본 보존 옵션 체크 → Apply patch 순서로 적용합니다.
 완료 후 생성된 한글판 BIN과 함께 제공되는 CUE를 같은 폴더에 두고, 에뮬레이터에서 CUE를 엽니다.
 프로그램 다운로드부터 결과 파일 준비까지 [적용 안내](docs/APPLY.md)에 설명되어 있습니다.
 
@@ -24,7 +24,7 @@ Delta Patcher에서 **원본 BIN 선택 → 패치 선택 → 원본 보존 옵�
 |---|---|
 | 판본 | PlayStation 일본 보급판 / Fukyuuban / SLPS-03015 |
 | 파일명 | `Tantei Jinguuji Saburou - Tomoshibi ga Kienu Ma ni (Japan) (Fukyuuban).bin` |
-| 크기 | **738,819,648바이트** |
+| 크기 | 738,819,648바이트 |
 | SHA256 | `cc44e8c81ae0f379c2adfc07fdd5dec280e8efb85217115567c8c7f9838ae519` |
 
 파일명만 같아서는 같은 원본이라고 판단할 수 없습니다. 해시는 파일의 내용을 식별하는 값입니다.
@@ -40,7 +40,7 @@ Delta Patcher에서 **원본 BIN 선택 → 패치 선택 → 원본 보존 옵�
 
 ## 오류 제보
 
-문제가 생기면 **[오류 제보](https://github.com/lf-idonotknow/Jinguuji-Tomoshibi-PS1-Korean-Patch/issues/new/choose)**에 패치 버전, 에뮬레이터·기기,
+문제가 생기면 [오류 제보](https://github.com/lf-idonotknow/Jinguuji-Tomoshibi-PS1-Korean-Patch/issues/new/choose)에 패치 버전, 에뮬레이터·기기,
 발생 장면, 재현 순서와 스크린샷을 적어 주세요. 게임 원본·완성 ROM·BIOS는 첨부하지 마세요.
 
 [공개 내역](CHANGELOG.md) · [검증 정보](docs/VERIFICATION.md) · [출처 및 글꼴 라이선스](docs/ATTRIBUTION.md)

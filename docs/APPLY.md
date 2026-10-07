@@ -1,35 +1,35 @@
 # 탐정 진구지 사부로: 등불이 꺼지기 전에 — 한글 패치 적용 방법
 
-**원본 일본 보급판 BIN과 컴퓨터를 준비하세요. 아래에서 파일을 선택하고 버튼을 눌러 적용할 수 있습니다.**
+원본 일본 보급판 BIN과 컴퓨터를 준비하세요. 아래에서 파일을 선택하고 버튼을 눌러 적용할 수 있습니다.
 
 ## 1. 패치 적용
 
-1. **[한글 패치 ZIP 다운로드](https://github.com/lf-idonotknow/Jinguuji-Tomoshibi-PS1-Korean-Patch/releases/download/v0.8/Tomoshibi_Fukyuuban_KO_v0.8.zip)** 후 압축을 모두 풉니다. `Source code (zip)`은 받지 않습니다.
-2. **[Windows용 Delta Patcher 다운로드](https://github.com/marco-calautti/DeltaPatcher/releases/download/v3.1.6/windows_bin_x86_64.zip)** 후 압축을 풀고 `DeltaPatcher.exe`를 실행합니다. Mac에서는 **[Mac용 다운로드](https://github.com/marco-calautti/DeltaPatcher/releases/download/v3.1.6/macos11%2B_bin_universal.zip)** 후 `DeltaPatcher.app`을 실행합니다.
-3. `Original file:` 오른쪽 폴더 버튼을 눌러 **원본 일본 보급판 BIN**을 선택합니다.
-4. `XDelta patch:` 오른쪽 폴더 버튼을 눌러 패치 ZIP에서 꺼낸 **`Tomoshibi_Fukyuuban_KO_v0.8.xdelta`**를 선택합니다.
-5. 톱니바퀴 버튼을 눌러 **`Backup original file`을 체크**합니다. **`Checksum validation`도 체크**된 상태로 둡니다.
-6. **`Apply patch`**를 누릅니다. **`Patch successfully applied!`**가 나오면 적용이 끝난 것입니다. 원본과 같은 폴더에 이름 끝이 **`PATCHED.bin`**인 한글판 파일이 생깁니다.
-7. 새로 생긴 `PATCHED.bin`의 이름을 아래 **한글판 BIN 이름**으로 맞춘 뒤, 패치 ZIP에서 꺼낸 **한글판 CUE**를 같은 폴더에 넣습니다. 에뮬레이터에서 **CUE 파일**을 열면 됩니다.
+1. [한글 패치 ZIP 다운로드](https://github.com/lf-idonotknow/Jinguuji-Tomoshibi-PS1-Korean-Patch/releases/download/v0.8/Tomoshibi_Fukyuuban_KO_v0.8.zip) 후 압축을 모두 풉니다. `Source code (zip)`은 받지 않습니다.
+2. [Windows용 Delta Patcher 다운로드](https://github.com/marco-calautti/DeltaPatcher/releases/download/v3.1.6/windows_bin_x86_64.zip) 후 압축을 풀고 `DeltaPatcher.exe`를 실행합니다. Mac에서는 [Mac용 다운로드](https://github.com/marco-calautti/DeltaPatcher/releases/download/v3.1.6/macos11%2B_bin_universal.zip) 후 `DeltaPatcher.app`을 실행합니다.
+3. `Original file:` 오른쪽 폴더 버튼을 눌러 원본 일본 보급판 BIN을 선택합니다.
+4. `XDelta patch:` 오른쪽 폴더 버튼을 눌러 패치 ZIP에서 꺼낸 `Tomoshibi_Fukyuuban_KO_v0.8.xdelta`를 선택합니다.
+5. 톱니바퀴 버튼을 눌러 `Backup original file`을 체크합니다. `Checksum validation`도 체크된 상태로 둡니다.
+6. `Apply patch`를 누릅니다. `Patch successfully applied!`가 나오면 적용이 끝난 것입니다. 원본과 같은 폴더에 이름 끝이 `PATCHED.bin`인 한글판 파일이 생깁니다.
+7. 새로 생긴 `PATCHED.bin`의 이름을 아래 한글판 BIN 이름으로 맞춘 뒤, 패치 ZIP에서 꺼낸 한글판 CUE를 같은 폴더에 넣습니다. 에뮬레이터에서 CUE 파일을 열면 됩니다.
 
-**한글판 BIN 이름 — 아래 한 줄을 복사해서 사용하세요.**
+한글판 BIN 이름 — 아래 한 줄을 복사해서 사용하세요.
 
 ```text
 Tantei Jinguuji Saburou - Tomoshibi ga Kienu Ma ni (Japan) (Fukyuuban) (Korean).bin
 ```
 
-**함께 둘 한글판 CUE**
+함께 둘 한글판 CUE
 
 ```text
 Tantei Jinguuji Saburou - Tomoshibi ga Kienu Ma ni (Japan) (Fukyuuban) (Korean).cue
 ```
 
-Windows에서 이름을 맞추기 전에 탐색기의 **보기 → 표시 → 파일 확장명**을 켜세요.
-Windows 10에서는 **보기 → 파일 확장명**을 체크합니다. 이름 끝이 `.bin.bin`이 되지 않도록 확인하세요.
-다른 기기로 게임을 옮길 때도 **한글판 BIN과 CUE 두 파일을 함께** 복사하세요.
+Windows에서 이름을 맞추기 전에 탐색기의 보기 → 표시 → 파일 확장명을 켜세요.
+Windows 10에서는 보기 → 파일 확장명을 체크합니다. 이름 끝이 `.bin.bin`이 되지 않도록 확인하세요.
+다른 기기로 게임을 옮길 때도 한글판 BIN과 CUE 두 파일을 함께 복사하세요.
 
 `Backup original file`을 체크하면 원본은 남고 한글판이 별도로 생성됩니다.
-패치 적용과 결과 파일을 위한 여유 공간은 **2GB 이상**을 권장합니다.
+패치 적용과 결과 파일을 위한 여유 공간은 2GB 이상을 권장합니다.
 
 ## 2. 잘 안 될 때
 
@@ -48,7 +48,7 @@ Windows 10에서는 **보기 → 파일 확장명**을 체크합니다. 이름 �
 |---|---|
 | 판본 | PlayStation 일본 보급판 / Fukyuuban / SLPS-03015 |
 | 파일명 | `Tantei Jinguuji Saburou - Tomoshibi ga Kienu Ma ni (Japan) (Fukyuuban).bin` |
-| 크기 | **738,819,648바이트** |
+| 크기 | 738,819,648바이트 |
 | SHA256 | `cc44e8c81ae0f379c2adfc07fdd5dec280e8efb85217115567c8c7f9838ae519` |
 
 파일명만 같아서는 같은 원본이라고 판단할 수 없습니다. 해시는 파일의 내용을 식별하는 값입니다.

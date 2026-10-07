@@ -2,7 +2,7 @@
 
 ## 패치 적용 확인
 
-macOS에서 **Delta Patcher 3.1.6**으로 배포 패치를 실제 적용했습니다.
+macOS에서 Delta Patcher 3.1.6으로 배포 패치를 실제 적용했습니다.
 `Backup original file` 옵션으로 원본이 보존되고, `PATCHED.bin` 결과 파일이 별도로 생성되는 것을 확인했습니다.
 적용 결과의 전체 BIN SHA256은 기준 한글판과 일치합니다.
 
