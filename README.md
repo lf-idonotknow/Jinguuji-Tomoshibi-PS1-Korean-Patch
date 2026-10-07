@@ -8,15 +8,25 @@ PlayStation **일본 보급판(Fukyuuban)** 한글 패치. 첫 공개 버전은 
 ZIP에는 패치, CUE, 해시를 검사하는 적용 스크립트, 설명서, Galmuri 라이선스가 들어 있습니다.
 GitHub의 자동 생성 `Source code (zip)`은 패치 배포 ZIP이 아닙니다.
 
-1. 배포 ZIP 전체를 같은 폴더에 풉니다.
-2. Python 3.9 이상과 [xdelta3](https://github.com/jmacd/xdelta/releases)를 준비합니다.
-3. 압축 해제 폴더에서 다음 명령을 실행합니다. 원본 BIN이 다른 폴더에 있으면 그 경로를 넣습니다.
+1. **`Tomoshibi_Fukyuuban_KO_v0.8.zip`**을 다운로드하고 **압축을 모두 풉니다**.
+2. Python과 xdelta3를 준비합니다. 설치 순서는 아래 상세 안내에 있습니다.
+3. 압축을 푼 폴더에 원본 BIN을 **이름 그대로 복사**하고 xdelta3 실행 파일을 넣습니다.
+4. 해당 폴더에서 아래 운영체제에 맞는 명령을 복사해 실행합니다.
 
-```sh
-python3 apply_patch.py "Tantei Jinguuji Saburou - Tomoshibi ga Kienu Ma ni (Japan) (Fukyuuban).bin" --output-dir "Korean"
+**Windows**
+
+```powershell
+py -3 .\apply_patch.py "Tantei Jinguuji Saburou - Tomoshibi ga Kienu Ma ni (Japan) (Fukyuuban).bin" --xdelta .\xdelta3.exe --output-dir Korean
 ```
 
-적용 후 생성된 BIN/CUE를 같은 폴더에 두고 에뮬레이터에서 **CUE**를 엽니다.
+**macOS**
+
+```sh
+python3 ./apply_patch.py "Tantei Jinguuji Saburou - Tomoshibi ga Kienu Ma ni (Japan) (Fukyuuban).bin" --xdelta ./xdelta3 --output-dir Korean
+```
+
+`패치 적용 및 전체 SHA256 확인 완료.`가 나오면 성공입니다.
+생성된 **`Korean` 폴더의 CUE 파일**을 에뮬레이터에서 엽니다.
 
 [자세한 적용 방법](docs/APPLY.md) · [0.8 변경 내역](CHANGELOG.md) · [검증 범위](docs/VERIFICATION.md)
 
