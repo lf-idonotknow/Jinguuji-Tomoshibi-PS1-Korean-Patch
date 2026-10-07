@@ -1,0 +1,45 @@
+name: 오류 제보
+description: 번역, 글자 표시, 진행 또는 패치 적용 문제를 제보합니다.
+title: "[0.8] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        게임 원본·완성 ROM·BIOS는 첨부하지 마세요. 스크린샷과 재현 순서를 적어 주세요.
+  - type: input
+    id: version
+    attributes:
+      label: 패치 버전
+      placeholder: "0.8"
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 실행 환경
+      description: 운영체제, 기기, 에뮬레이터 또는 코어의 이름과 버전을 적습니다.
+    validations:
+      required: true
+  - type: textarea
+    id: scene
+    attributes:
+      label: 장면 및 재현 순서
+      description: 장·장소·상대 인물·선택 순서 또는 패치 적용 명령과 오류 메시지를 적습니다.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 실제 결과와 기대 결과
+    validations:
+      required: true
+  - type: textarea
+    id: images
+    attributes:
+      label: 스크린샷
+      description: 문제가 드러나는 화면을 첨부합니다.
+  - type: textarea
+    id: save
+    attributes:
+      label: 세이브 사용 여부
+      description: 새 게임인지, 0.8에서 저장했는지, 이전 한글판 또는 원본 세이브인지 적습니다.

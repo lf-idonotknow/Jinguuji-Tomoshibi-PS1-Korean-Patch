@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "version": "0.8",
+  "source": {
+    "filename": "Tantei Jinguuji Saburou - Tomoshibi ga Kienu Ma ni (Japan) (Fukyuuban).bin",
+    "size": 738819648,
+    "sha256": "cc44e8c81ae0f379c2adfc07fdd5dec280e8efb85217115567c8c7f9838ae519",
+    "track": 1,
+    "mode": "MODE2/2352"
+  },
+  "target": {
+    "filename": "Tantei Jinguuji Saburou - Tomoshibi ga Kienu Ma ni (Japan) (Fukyuuban) (Korean).bin",
+    "size": 750349152,
+    "sha256": "e59ae345bf56a9b660a448c1341c49c4d4fd86334fadd0e71c0a39f476f1f232"
+  },
+  "patch": {
+    "filename": "Tomoshibi_Fukyuuban_KO_v0.8.xdelta",
+    "size": 163477481,
+    "sha256": "b6cb885cb04a76faebbd81b21e53646b152fcea4bce5dd876271b7d18bfb1ce3"
+  },
+  "cue": {
+    "filename": "Tantei Jinguuji Saburou - Tomoshibi ga Kienu Ma ni (Japan) (Fukyuuban) (Korean).cue",
+    "size": 142,
+    "sha256": "b060fc3f94e0a45b58b2e4c4ee5f84482697b04271ee7c22efd54b838fc84d68"
+  }
+}
